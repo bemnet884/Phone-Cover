@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils';
 import { HTMLAttributes } from 'react';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation'; 
 
 interface PhoneProps extends HTMLAttributes<HTMLDivElement> {
   imgSrc: string;
@@ -8,7 +8,7 @@ interface PhoneProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 const Phone = ({ imgSrc, className, dark = false, ...props }: PhoneProps) => {
-  const { basePath } = useRouter();
+  const basePath = usePathname();
 
   return (
     <div

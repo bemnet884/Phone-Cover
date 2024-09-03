@@ -5,10 +5,10 @@ import { Reviews } from '@/components/Reviews';
 import { buttonVariants } from '@/components/ui/button';
 import { ArrowRight, Check, Star } from 'lucide-react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 
 export default function Home() {
-  const { basePath } = useRouter();
+  const basePath = usePathname();
 
   return (
     <div className='bg-slate-50 grainy-light'>

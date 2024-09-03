@@ -6,7 +6,7 @@ import { useInView } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import Phone from './Phone'
 import Image from 'next/image'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 
 const PHONES = [
   'testimonials/1.jpg',
@@ -154,7 +154,7 @@ function ReviewGrid() {
 }
 
 export function Reviews() {
-  const { basePath } = useRouter();
+  const basePath = usePathname();
   return (
     <MaxWidthWrapper className='relative max-w-5xl'>
       <img
