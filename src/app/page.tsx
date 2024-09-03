@@ -99,12 +99,12 @@ export default function Home() {
               <Image
                 src='/your-image.png'
                 className='absolute w-40 lg:w-52 left-56 -top-20 select-none hidden sm:block lg:hidden xl:block'
-                alt='img' 
+                alt='img'
               />
               <Image
                 src='/line.png'
                 className='absolute w-20 -left-6 -bottom-6 select-none'
-                alt='img' 
+                alt='img'
               />
               <Phone className='w-64'
                 imgSrc='./testimonials/1.jpg' />
@@ -145,7 +145,7 @@ export default function Home() {
                     the image is super clear
                   </span>
                   , on the case I had before, the image started fading into
-                  yellow-ish color after a couple weeks. Love it. &quot;
+                  yellow-ish color after a couple weeks. Love it.&quot;
                 </p>
               </div>
               <div className='flex gap-4 mt-2'>
@@ -182,7 +182,7 @@ export default function Home() {
                   <span className='p-0.5 bg-slate-800 text-white'>
                     looks brand new after about half a year
                   </span>
-                  . I dig it. &quot;
+                  . I dig it.&quot;
                 </p>
               </div>
               <div className='flex gap-4 mt-2'>
@@ -226,14 +226,14 @@ export default function Home() {
             <div className='relative flex flex-col items-center md:grid grid-cols-2 gap-40'>
               <Image
                 src='./arrow.png'
-                alt='img' 
+                alt='img'
                 className='absolute top-[25rem] md:top-1/2 -translate-y-1/2 z-10 left-1/2 -translate-x-1/2 rotate-90 md:rotate-0'
               />
 
               <div className='relative h-80 md:h-full w-full md:justify-self-end max-w-sm rounded-xl bg-gray-900/5 ring-inset ring-gray-900/10 lg:rounded-2xl'>
                 <Image
                   src='/horse.jpg'
-                  alt='img' 
+                  alt='img'
                   className='rounded-md object-cover bg-white shadow-2xl ring-1 ring-gray-900/10 h-full w-full'
                 />
               </div>
