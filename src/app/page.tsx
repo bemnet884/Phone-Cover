@@ -1,5 +1,3 @@
-'use client'
-
 import { Icons } from '@/components/Icons';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import Phone from '@/components/Phone';
@@ -7,10 +5,10 @@ import { Reviews } from '@/components/Reviews';
 import { buttonVariants } from '@/components/ui/button';
 import { ArrowRight, Check, Star } from 'lucide-react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { useRouter } from 'next/router';
 
 export default function Home() {
-  const basePath = usePathname();
+  const { basePath } = useRouter();
 
   return (
     <div className='bg-slate-50 grainy-light'>
