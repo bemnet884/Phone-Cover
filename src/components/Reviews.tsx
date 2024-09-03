@@ -6,6 +6,7 @@ import { useInView } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import Phone from './Phone'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 const PHONES = [
   'testimonials/1.jpg',
@@ -153,12 +154,13 @@ function ReviewGrid() {
 }
 
 export function Reviews() {
+  const { basePath } = useRouter();
   return (
     <MaxWidthWrapper className='relative max-w-5xl'>
       <img
         aria-hidden='true'
         alt='img'
-        src='/whatpeoplearebuying.png'
+        src={`${basePath}/whatpeoplearebuying.png`}
         className='absolute select-none hidden xl:block -left-32 top-1/3'
       />
 
